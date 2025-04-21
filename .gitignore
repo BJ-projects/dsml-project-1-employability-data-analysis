@@ -1,0 +1,19 @@
+
+
+__pycache__
+
+# Excel and spreadsheet files
+*.xls
+*.xlsx
+*.xlsm
+*.xlsb
+*.ods
+*.tsv
+*.csv
+
+
+# Ignore files and directories with personal/private data
+*private-data*
+*private_data*
+
+
