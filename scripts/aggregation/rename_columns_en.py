@@ -1,6 +1,6 @@
 # for changing the column names in english data
 
-def rename_column_names(df):
+def rename_columns_en(df):
     en_column_dict = {
         "Please enter your full name": "name",
         "Before you started the bootcamp, what best described your previous experience?": "pre_bootcamp_coding_experience",
