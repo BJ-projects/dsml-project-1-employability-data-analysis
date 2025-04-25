@@ -2,7 +2,7 @@
 import pandas as pd
 
 
-def render_group_by_column_vs_has_dev_job(df, column_to_render):
+def group_by_column_vs_has_dev_job(df, column_to_render):
 
   result = df.groupby(column_to_render).agg(
     total_students=("ct_student_id", "size"),
@@ -72,7 +72,7 @@ def render_group_by_column_vs_has_dev_job(df, column_to_render):
     categories=ordered_categories_dict[column_to_render],
     ordered=True
   )
-
-  # Sort by the index (which is now an ordered categorical)
-  display(result.sort_index())
+  
+  # Return, sort by the index (which is now an ordered categorical)
+  return result.sort_index()
 
